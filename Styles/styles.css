@@ -133,20 +133,58 @@ fact-name{
 .fact-descreption{
   max-width: 540px;
 }
+/*Sponsors styles*/
+.sponcors-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.sponcors-company{
+  display: flex;
+  max-width: 167px;
+  gap: 156px;
+}
+/* Footer styles */
+.footer-txt{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #424242;
+  background-color: #FFF4E7;
+  max-width: 1440px;
+  border-radius: 8px;
+}
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
  .navbar,
   .nav-link,
-  .teams{
+  .teams,
+  .sponcors-info,
+  .footer-txt{
   flex-direction: column;
  }
- .team-img-container{
+ .team-img-container, 
+ .facts-container
+
+ {
   
   grid-template-columns: repeat(1, 1fr);
   margin: 0 auto;
   
 }
-#of{
+.facts-container{
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.sponcors-company{
+  gap: 10px;
+}
+.sponcors-company img{
+  width:80px;
+}
+.of{
   margin-left: 20px;
 }
 }
